@@ -1,0 +1,24 @@
+{
+  "name": "cypress-testing",
+  "version": "1.0.0",
+  "description": "cypress testing",
+  "main": "index.js",
+  "scripts": {
+    "test:login": "npx cypress run --browser chrome --spec 'cypress/e2e/4-enter/login.cy.js'",
+    "test:register": "npx cypress run --browser chrome --spec 'cypress/e2e/4-enter/register.cy.js'",
+    "test:lupaPassword": "npx cypress run --browser chrome --spec 'cypress/e2e/4-enter/lupaPassword.cy.js'",
+    "test:logout": "npx cypress run --browser chrome --spec 'cypress/e2e/4-enter/logout.cy.js'",
+    "run:enter": "npx cypress run --browser chrome --spec 'cypress/e2e/4-enter/*'",
+    "test:login:bhinneka": "npx cypress run --browser chrome --spec 'cypress/e2e/5-bhinneka/login.cy.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.14.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1"
+  },
+  "dependencies": {
+    "cypress-testrail-all-status": "^1.0.5"
+  }
+}
